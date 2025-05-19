@@ -3,7 +3,6 @@ sudo dnf install alsa-lib compat-openssl11 dbus-libs expat fontconfig glibc liba
 
 sudo dnf groupinstall "Server with GUI"
 systemctl set-default graphical
-sudo dnf groupinstall "Development Tools"
 sudo dnf install gnome-tweaks
 sudo dnf install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
