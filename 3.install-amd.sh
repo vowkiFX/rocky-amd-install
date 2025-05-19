@@ -12,6 +12,7 @@ sudo amdgpu-install --usecase=workstation,rocm
 sudo amdgpu-install --usecase=rocm,asan
 sudo amdgpu-install --list-usecase
 sudo amdgpu-install --help
+sudo ./amdgpu-pro-install --opencl=pal,legacy
 sudo grubby --update-kernel=ALL --args="rd.driver.blacklist=nouveau modprobe.blacklist=nouveau"
 sudo sed -i -e 's/GRUB_CMDLINE_LINUX="/GRUB_CMDLINE_LINUX="rd.driver.blacklist=nouveau modprobe.blacklist=nouveau /g' /etc/default/grub
 reboot
